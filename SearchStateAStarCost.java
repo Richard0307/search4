@@ -6,19 +6,19 @@ public class SearchStateAStarCost extends SearchState {
     public SearchStateAStarCost(int lcost, Coords point) {
         this.localCost = lcost;
         this.point = point;
-    };
+    }
     public SearchStateAStarCost(int lcost, Coords point, int estRemCost) {
         this.localCost = lcost;
         this.point = point;
         this.estRemCost = estRemCost;
-    };
+    }
     public boolean goalPredicate(Search searcher) {
         if (searcher.currentNode.sameState(searcher.goalNode)) {
             return true;
         } else {
             return false;
         }
-    };
+    }
 
     public ArrayList<SearchState> getSuccessors(Search searcher) {
         ArrayList<SearchState> successorStates = new ArrayList<SearchState>();
@@ -84,7 +84,7 @@ public class SearchStateAStarCost extends SearchState {
         }
 
         return successorStates;
-    };
+    }
 
     public boolean sameState(SearchState n2) {
         if (this.point.getx() == n2.point.getx() && this.point.gety() == this.point.gety()) {
@@ -92,7 +92,7 @@ public class SearchStateAStarCost extends SearchState {
         } else {
             return false;
         }
-    };
+    }
 
     // heuristics distances
 

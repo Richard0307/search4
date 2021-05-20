@@ -3,7 +3,7 @@
 public class RunAStarSearch {
     public static void main(String[] arg) {
 //        TerrainMap tm = new TerrainMap("C:\\Users\\weiyaowu\\IdeaProjects\\hello\\src\\com\\company\\diablo.pgm");
-        TerrainMap tm = new TerrainMap("G:\\ml\\SearchAlgorithm3\\src\\search\\api\\tmc.pgm");
+        TerrainMap tm = new TerrainMap("tmc.pgm");
         int[][] tmap = tm.getTmap();
 
 
