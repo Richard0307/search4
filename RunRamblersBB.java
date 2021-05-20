@@ -8,14 +8,14 @@ public class RunRamblersBB {
         ArrayList<Coords> endPoints = new ArrayList<Coords>();
         ArrayList<Double> efficiencies = new ArrayList<Double>();
         for (int i = 0; i < 10; i++) {
-            int startx = (int)(Math.random()*tm.getDepth());
-            int starty = (int)(Math.random()*tm.getWidth());
+            int starty = (int)(Math.random()*tm.getDepth());
+            int startx = (int)(Math.random()*tm.getWidth());
 
-            int endx = (int)(Math.random()*tm.getDepth());
-            int endy = (int)(Math.random()*tm.getWidth());
+            int endy = (int)(Math.random()*tm.getDepth());
+            int endx = (int)(Math.random()*tm.getWidth());
 
-            Coords start = new Coords(startx, starty);
-            Coords end = new Coords(endx, endy);
+            Coords start = new Coords(starty, startx);
+            Coords end = new Coords(endy, endx);
 
             startPoints.add(start);
             endPoints.add(end);
@@ -45,6 +45,6 @@ public class RunRamblersBB {
             System.out.println("efficiency is:" + efficiency);
 
         }
-        
+
     }
 }

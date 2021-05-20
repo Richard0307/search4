@@ -43,7 +43,7 @@ public class SearchStateBBCost extends SearchState {
             Coords tempCoord = new Coords(y + 1, x);
             cost = 1;
             if (tmpHeights[y + 1][x] > tmpHeights[y][x]) {
-                cost += Math.abs(tmpHeights[y][x + 1] - tmpHeights[y][x]);
+                cost += Math.abs(tmpHeights[y + 1][x] - tmpHeights[y][x]);
             }
 
             SearchState tmpState = new SearchStateBBCost(cost, tempCoord);

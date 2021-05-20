@@ -14,8 +14,8 @@ public class RunAStarSearch {
         System.out.println(tm.getHeight() - 1);
         System.out.println(tm.getWidth() - 1);
 
-        SearchState initState = new SearchStateAStarCost(0, start);
-        SearchState goalState = new SearchStateAStarCost(0, end);
+        SearchState initState = new SearchStateAStarCost(0, start, 0);
+        SearchState goalState = new SearchStateAStarCost(0, end, 0);
 
         AStarSearch AStarSearch = new AStarSearch();
         AStarSearch.runSearchAStar(initState, goalState, tm, "AStar", "Manhattan");
